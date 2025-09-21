@@ -87,7 +87,8 @@ assert.strictEqual(set.hasBeenRolled(), true);
 assert(set.getTotal() !== null);
 set.reset();
 assert.strictEqual(set.hasBeenRolled(), false);
-assert.strictEqual(set.getTotal(), null);assert.deepStrictEqual(set.getValues(), rolled);
+assert.strictEqual(set.getTotal(), null);
+assert.deepStrictEqual(set.getValues(), [null, null, null]);
 });
 });
 describe('getTotal', () => {
