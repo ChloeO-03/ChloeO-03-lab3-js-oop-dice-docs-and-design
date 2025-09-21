@@ -99,4 +99,3 @@ export class DiceSet {
     return this.#dice.length * this.getSides();
   }
 }
-

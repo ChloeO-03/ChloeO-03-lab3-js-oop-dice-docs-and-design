@@ -93,7 +93,8 @@ export class DiceNotation {
       if (component.type === 'dice') {
         const diceSet = new DiceSet(component.count, component.sides);
         const rolls = diceSet.rollAll();
-        const subtotal = rolls.reduce((sum, val) => sum + val, 0) * component.sign;
+        const subtotal =
+          rolls.reduce((sum, val) => sum + val, 0) * component.sign;
 
         results.dice.push({
           notation: `${component.count}d${component.sides}`,

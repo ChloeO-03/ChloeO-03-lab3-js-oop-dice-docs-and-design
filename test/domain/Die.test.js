@@ -3,7 +3,6 @@ import assert from 'node:assert';
 import { Die } from '../../src/domain/Die.js';
 
 describe('Die', () => {
-
   describe('constructor', () => {
     it('should create a die with default 6 sides', () => {
       const die = new Die();
@@ -91,5 +90,4 @@ describe('Die', () => {
       assert.strictEqual(die.getValue(), null);
     });
   });
-
 });

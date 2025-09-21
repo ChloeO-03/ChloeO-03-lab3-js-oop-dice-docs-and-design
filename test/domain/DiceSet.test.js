@@ -3,7 +3,6 @@ import assert from 'node:assert';
 import { DiceSet } from '../../src/domain/DiceSet.js';
 
 describe('DiceSet', () => {
-
   describe('constructor', () => {
     it('should create a set with default 1 die of 6 sides', () => {
       const set = new DiceSet();
@@ -18,8 +17,14 @@ describe('DiceSet', () => {
     });
 
     it('should throw error for count less than 1', () => {
-      assert.throws(() => new DiceSet(0), /DiceSet must contain at least 1 die/);
-      assert.throws(() => new DiceSet(-1), /DiceSet must contain at least 1 die/);
+      assert.throws(
+        () => new DiceSet(0),
+        /DiceSet must contain at least 1 die/
+      );
+      assert.throws(
+        () => new DiceSet(-1),
+        /DiceSet must contain at least 1 die/
+      );
     });
   });
 
@@ -132,5 +137,4 @@ describe('DiceSet', () => {
       }
     });
   });
-
 });
