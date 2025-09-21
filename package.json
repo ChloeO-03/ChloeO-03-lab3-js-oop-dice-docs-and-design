@@ -1,6 +1,6 @@
 {
    "name": "lab3-js-oop-dice-docs-and-design",
-   "version": "0.1.0",
+   "version": "0.2.0",
    "description": "A dice simulation demonstrating JS OOP, dependency injection, and quality practices",
    "type": "module",
    "main": "index.js",
